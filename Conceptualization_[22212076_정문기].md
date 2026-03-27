@@ -8,7 +8,7 @@
 | Revision date | Version # | Description | Author |
 | :--- | :--- | :--- | :--- |
 | 2026/03/27 | 1.0.0 | First Documentation - 전체 구조 및 초기 기획안 작성 | [정문기] |
-
+| 2026/03/27 | 1.0.1 | Use Case List 다이어그램 오류 수정  | [정문기] |
 ---
 
 ## = Contents =
