@@ -66,26 +66,30 @@ flowchart TD
 ## 3. Use case list
 
 ```mermaid
-usecaseDiagram
-    actor Customer as "Customer (사용자)"
-    actor SmartDevice as "Smart Device (스마트 기기)"
-    actor WeatherAPI as "Weather API (외부 환경)"
+flowchart LR
+    %% Actors
+    Customer((사용자))
+    SmartDevice((스마트 기기))
+    WeatherAPI((외부 환경))
 
-    rectangle "PlanAll System" {
-        usecase UC1 as "데이터 수집 및 동기화"
-        usecase UC2 as "맞춤형 운동 스케줄 생성"
-        usecase UC3 as "실시간 컨디션 피드백"
-        usecase UC4 as "사용자 통계 및 성취도 열람"
-        usecase UC5 as "AI 변화 과정 시각화"
-    }
+    %% System Boundary
+    subgraph PlanAll System
+        direction TB
+        UC1([데이터 수집 및 동기화])
+        UC2([맞춤형 운동 스케줄 생성])
+        UC3([실시간 컨디션 피드백])
+        UC4([사용자 통계 및 성취도 열람])
+        UC5([AI 변화 과정 시각화])
+    end
 
-    Customer --> UC2
-    Customer --> UC4
-    Customer --> UC5
-    SmartDevice --> UC1
-    UC1 --> UC2
-    UC1 --> UC3
-    WeatherAPI --> UC3
+    %% Connections
+    Customer --- UC2
+    Customer --- UC4
+    Customer --- UC5
+    SmartDevice --- UC1
+    UC1 -.-> UC2
+    UC1 -.-> UC3
+    WeatherAPI --- UC3
 ```
 
 | Use Case | Actor | Description |
