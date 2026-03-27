@@ -4,6 +4,8 @@
 
 **Student No, Name, E-mail**: [22212076], [정문기], [mungi000000@gmail.com]
 
+**Project Link**: https://github.com/mungi0901/planwell
+
 ## [ Revision history ]
 
 | Revision date | Version # | Description | Author |
